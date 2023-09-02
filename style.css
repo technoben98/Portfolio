@@ -456,12 +456,6 @@ footer{
 
 /* Responsive Design start */
 
-/* Large Screen 992px-1199px */
-
-/* 
-@media screen and (max-width:1199) {
-} */
-
 /* Medium Screen 768px-991px*/
 
 @media screen and (max-width:991px){
@@ -474,9 +468,6 @@ footer{
     #contactImage{
         width: 60dvw;
     }
-    /* p{
-        font-size: 1em!important;
-    } */
 }
 
 /* X-Small Screen 400px-600px */
