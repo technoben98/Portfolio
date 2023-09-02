@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+body{
+    background-image: url(source/backgroud/background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    background-color: white;
+    z-index: -3;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigator Panel */
+
+#navBar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgb(35 9 47);
+    color: white;
+    height: 5vh;
+    position: fixed;
+    z-index: 2;
+}
+
+#navList{
+    list-style: none;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 1%;
+    background-color: inherit;
+}
+
+#navList a:hover{
+    opacity: 0.5;
+}
+
+/* Navigator Panel end */
+
+/* Preview start*/
+
+#preview{
+    min-height: 105vh;
+    color: white;
+    display: flex;
+    align-items:flex-end;
+    margin-bottom: -1%;
+}
+
+#preview h5{
+    font-weight: bold;
+    font-size: 2em;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #45073A;
+    width: 100%;
+    text-align: center;
+    height: 15vh;
+}
+
+/* Preview end*/
+
+/* Landing start*/
+
+/* General Setong start */
+
+section{
+    min-height: 105vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom,#45073A, #4BEBEB);
+}
+
+.blockWraper{
+    width: 80vw;
+    min-height: 105vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+}
+
+#landingWraper{
+    padding-top: 5vmax;
+    background: rgb(35 9 47);
+    opacity: 0.97;
+    z-index: 1;
+    background-color: white;
+    
+}
+
+#landingWraper p{
+    color: #641EA2;
+    width: 30vw;
+    padding: 2%;
+    border-radius: 20%;
+    font-size: 1.3em;
+}
+/* General Setings end */
+
+/* Real Block start */
+#real{
+    min-height: 40vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 10px rgb(43, 177, 187) solid;
+    background-color: #9AF1F8;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7%;
+    opacity: 0.9;
+    box-shadow: 8px 8px lightgray;
+}
+
+#real img{
+    width: 20vw;
+    background-color: white; 
+    border-radius: 20%;
+    margin-right: 5%;
+    border: 10px rgb(43, 177, 187) solid;
+}
+
+/* Real Block end */
+
+/* E-Block Start */
+#e-dmitriy{
+    min-height: 40vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:flex-start;
+    align-items: center;
+    text-align: right;
+}
+
+#e-dmitriy img{
+    width: 50vw;
+    margin-right: -10%;
+} 
+
+#e-blockText{
+    margin-right: -10%;
+    border: 10px #702282 solid;
+}
+
+/* E-Block end */
+
+/* Landing end */
+
+/* About */
+
+#about{
+    background-image: linear-gradient(to bottom, #4BEBEB,#45073A);
+    padding-top: 5%;
+}
+
+#aboutWraper{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* About Top start*/
+
+#middleText{
+    width: 60vmax;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    font-size: 1.3em;
+}
+
+#middleText h1{
+    text-align: center;
+    color: blue;
+}
+
+#about h2{
+    color: blue;
+}
+
+/* About Top end */
+
+/* About Main start */
+
+#aboutBottom{
+    margin: 7%;
+}
+
+#leftText{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+#leftTextWraper p{
+    margin-left: -15%;
+}
+
+#rightText{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#rightTextWraper{
+    margin-left: 15%;
+    margin-right: -10%;
+}
+
+.aboutImage{
+    width: 33vw;
+}
+
+#aboutText{
+    font-weight: bold;
+    border: 10px #702282 solid;
+    padding: 5%;
+    border-radius: 20%;
+    font-size: 1.3em;
+    color: #641EA2;
+}
+
+/* About Main end */
+
+/* My Skills start */
+
+#skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mySkills{
+    background-color: #F4D9FF;
+    margin: 2% 2% 2% 0%;
+    padding: 2%;
+    border-radius: 15%;
+}
+
+#lang{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.languages {
+    background-color: #DCEEF0;
+    margin: 2% 2% 2% 0%;
+    padding: 2%;
+    border-radius: 15%;
+}
+
+/* My Skills end */
+/* About end */
+
+/* Projects */
+#portfolio{
+    min-height: 105vh;
+}
+
+#portfolioBlock{
+    background-color: white;
+    margin-top: 5%;
+}
+
+#portfolio h1{
+    text-align: center;
+    padding-top: 5%;
+    color: blue;
+}
+
+#portfolioWraper{
+    margin-top: 5%;
+    padding-bottom: 10%;
+}
+
+.project iframe{
+    width: 70vw;
+    height: 60vmax;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:white;
+    border: 7px #702282 solid;
+    border-radius: 3%;
+}
+
+.review {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviewImage{
+    width: 20vw;
+}
+
+#keanuReview{
+    width: 40vw;
+    border: 10px #702282 solid;
+    padding: 5%;
+    border-radius: 20%;
+    font-size: 1.3em;
+    color: #641EA2;
+}
+
+#welcomeReview{
+    width: 40vw;
+    border: 10px #702282 solid;
+    padding: 5%;
+    border-radius: 20%;
+    font-size: 1.3em;
+    color: #641EA2;
+}
+
+.portfolioButtonsBlock{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.portfolioButton button{
+    background-color: #45073A;
+    color: #4BEBEB;
+    height: 4vh;
+    border: none;
+    border-radius: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    padding: 5px;
+}
+
+.portfolioButton button:hover{
+    color: #45073A;
+    background-color: #4BEBEB;
+    scale: 1.2;
+}
+
+#portfolioLine{
+    border: #702282 10px solid;
+    opacity: 1;
+}
+
+/* Projects end */
+
+/* Contact start */
+
+#contact{
+    text-align: center;
+    background-image: linear-gradient(to bottom, #4BEBEB,#45073A);
+}
+
+#contactWraper{
+    background-color: white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#contact h2{
+    padding-top: 5%;
+}
+
+#mainForm{
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.textField{
+    width: 100%;
+    height: 4vh;
+    border-radius: 5%;
+    border: none;
+    background-image: linear-gradient(to bottom, #bdf8f8,#c9cadd);
+}
+
+.field{
+    margin: 5% 0%;
+    font-size: 1.2em;
+}
+
+#message{
+    height: 30vh;
+}
+
+#submitButton{
+    width: 15vw;
+    height: 5vh;
+    border: none;
+    border-radius: 50px;
+    background-color: #45073A;
+    color: #4BEBEB;
+}
+
+#submitButton:hover{
+    transform: translateY(5px);
+    color: #45073A;
+    background-color: #4BEBEB;
+    scale: 1.2;
+}
+
+#goodbye {
+    margin-top: 10%;
+}
+
+#goodbye img{
+    margin-top: -15%;
+    margin-bottom: -10%;
+}
+
+/* Contact end */
+
+/* Footer start */
+
+footer{
+    background: rgb(35 9 47);
+    color: white;
+    height: 7vh;
+    text-align: center;
+}
+
+/* Footer end */
+
+/* Responsive Design start */
+
+/* Large Screen 992px-1199px */
+
+
+@media screen and (max-width:1199) {
+    
+}
+
+/* Medium Screen 768px-991px*/
+
+@media screen and (max-width:991px){
+
+}
+
+/* Small Screen 600px-768px */
+
+@media screen and (max-width:768px) {
+
+}
+/* Responsive Desing end */
