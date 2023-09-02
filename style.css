@@ -30,7 +30,7 @@ article{
 /* Navigator Panel */
 
 #navBar{
-    width: 100%;
+    width: 100dvw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -189,7 +189,7 @@ section{
 /* About Top start*/
 
 #middleText{
-    width: 60vmax;
+    width: 60vw;
     margin-left: auto;
     margin-right: auto;
     padding-top: 5%;
@@ -438,6 +438,7 @@ section{
 #goodbye img{
     margin-top: -15%;
     margin-bottom: -10%;
+    width: 60dvw;
 }
 
 /* Contact end */
@@ -457,10 +458,9 @@ footer{
 
 /* Large Screen 992px-1199px */
 
-
+/* 
 @media screen and (max-width:1199) {
-    
-}
+} */
 
 /* Medium Screen 768px-991px*/
 
@@ -471,6 +471,36 @@ footer{
 /* Small Screen 600px-768px */
 
 @media screen and (max-width:768px) {
+    #contactImage{
+        width: 60dvw;
+    }
+    /* p{
+        font-size: 1em!important;
+    } */
+}
 
+/* X-Small Screen 400px-600px */
+
+@media all and (max-width:600){
+    p{
+        font-size: 0.7em!important;
+    }
+    #aboutTopText {
+        font-size: 0.7em;
+        width: 60dvw!important;
+    }
+}
+
+@media all and (max-width:450px) {
+    #preview h5{
+        font-size: 1em;
+    }
+    *{
+        font-size: 0.7rem;
+    }
+
+    iframe{
+        visibility: hidden;
+    }
 }
 /* Responsive Desing end */
